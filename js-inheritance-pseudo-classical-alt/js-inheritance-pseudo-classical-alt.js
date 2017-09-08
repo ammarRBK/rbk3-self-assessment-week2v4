@@ -2,7 +2,7 @@
 // functional pattern. Your task is to rewrite these classes to use the
 // pseudoclassical pattern. They should have all the same methods as the 
 // objects returned from the maker functions except in pseudo classical style. 
-// You must be able to use your new functions to create new horse instances, 
+// You must be aclble to use your new functions to create new horse instances, 
 // just like this:
 //
 //   var myHorse = new Horse();
@@ -36,12 +36,25 @@ var makeFlyingHorse = function(name, color) {
 };
 
 // YOUR WORK GOES BELOW
-var Hourse=function(){
-  this.makeHorse=function(name){
-  this.result = {};
-  this.name = name;
-  this.goSomewhere = function(destination) {
-    return name + ' is galloping to ' + destination + '!';
+// Hourse.prototype.makeHorse = function(name){
+// this.name=name;
+// this.goSomewhere=function(destination){
+//   return name+' is galloping to '+destination+ '!';
+// }
+// }
+
+class Horse extends makeHorse{
+  constructor(name){
+    super(name)
+    this.name=name;
   }
-  };
 }
+class FlyingHorse extends makeFlyingHorse{
+  constructor(name,color){
+    super(name,color)
+    this.color=color;
+  }
+}
+
+
+ 
