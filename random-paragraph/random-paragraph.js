@@ -9,4 +9,6 @@
 
 var randomParagraphWithFiveSentences = function() {
   // your code is here
+ return chance.phone() +" " +chance.google_analytics()+ "  "+chance.ipv6()
+ +" "+chance.twitter() + " "+chance.klout() ;
 };

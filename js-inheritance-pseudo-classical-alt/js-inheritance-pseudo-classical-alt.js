@@ -36,13 +36,6 @@ var makeFlyingHorse = function(name, color) {
 };
 
 // YOUR WORK GOES BELOW
-// Hourse.prototype.makeHorse = function(name){
-// this.name=name;
-// this.goSomewhere=function(destination){
-//   return name+' is galloping to '+destination+ '!';
-// }
-// }
-
 class Horse extends makeHorse{
   constructor(name){
     super(name)
